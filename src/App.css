@@ -1,38 +1,97 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  font-size: 18px;
+}
+
+body{
+  color: #fff;
+  width: 100%;
+  text-align: justify;
+  background: url("https://wallpaperbat.com/img/388983-abstract-tech-wallpaper-top-free-abstract-tech-background.png");
+  background-size: cover;
+	background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+button[type="submit"]{
+  background-color: #b22222;
+  color:#fff;
+  border:none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+button:hover{
+  background-color: blueviolet;
+  color: #fff !important;
+}
+
+.card{
   text-align: center;
+  box-shadow: 2px 2px 5px #000;
+  background-color: #000;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card:hover{
+  background-color:#c2b280;
+  color: #000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.card-title, .card-text{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img{
+  border-radius: 20%;
+  filter: brightness(80%);
+}
+
+#userCard, .row{
+  margin-top: 120px;
+}
+
+@media screen and (max-width:575px){
+  .card{
+    margin: 0 auto;
+    width: 76%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width:576px) and (max-width:767px){
+  .card{
+    margin: 0 auto;
+    width: 35% !important;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width:490px){
+  .headline{
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width:424px){
+  .card-text{
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+  .card-text{
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px){
+  .card-text{
+    font-size: 16px;
   }
 }
